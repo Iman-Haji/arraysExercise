@@ -29,21 +29,33 @@ console.log(names); // adds the name Peter
 
 // Task 6
 // Print the array with spaces, not commas
-
 document.querySelector('#task6').textContent = names.join('  '); // gives spaces
+
 //or 
-names.join(' ');
+
+//names.join(' ');
 console.log(names.join(' ')); // gives spaces 
+
+
 
 // Task 7
 // Replace Mathew in the array with Lisa and Abraham 
+names [3] = "Lisa";
+names [4] =  "Abraham";
+console.log(names);
 
 
 
 // Task 8
 // Sort the array in the alphabetical order and print it
-names.sort(' ');
-document.querySelector('#task8').textContent = names;
+
+
+
+
+//names.sort('  ');
+//document.querySelector('#task8').textContent = names;
+
+
 
 // Task 9
 // Create an array called numbers and fill it with values 1, 7, 45, 32, 27, 86.
