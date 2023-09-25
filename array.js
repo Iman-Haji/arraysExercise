@@ -43,10 +43,13 @@ console.log(names.join(' ')); // gives spaces
 
 // Task 7
 // Replace Mathew in the array with Lisa and Abraham 
-names [3] = "Lisa";
-names [4] =  "Abraham";
-console.log(names);
+// Wrong Code:
+//names [3] = "Lisa";
+//names [4] =  "Abraham";
+//console.log(names);
 
+names.splice(3, 1, 'Lisa', 'Abraham');
+document.getElementById('task7').textContent = names;
 
 
 // Task 8
@@ -58,19 +61,20 @@ console.log(names.sort());
 // Task 9
 // Create an array called numbers and fill it with values 1, 7, 45, 32, 27, 86.
 // Sort the numbers from largest to smallest. Print them.
-let numbers = [1, 7, 45, 32, 27, 86];
+let numbers=[1, 7, 45, 32, 27, 86];
 numbers.sort(function(a,b){return a - b});
 console.log(numbers);
-
 
 
 // Task 10
 // Randomize the numbers array.
 
 // using 0.5 is most equal. Ifyou add something else other than 0,5, then it won’t be equal to 0 to 1.
-numbers.sort((a,b) => 0.5 - Math.random());
-console.log(numbers.sort());
-
+//Not the best code:
+//numbers.sort((a,b) => 0.5 - Math.random());
+//console.log(numbers.sort());
+numbers.sort((a,b) => 0.5 - Math.random())
+document.getElementById('task10').textContent= numbers;
 
 
 // Task 11
